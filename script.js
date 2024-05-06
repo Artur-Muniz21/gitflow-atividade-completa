@@ -8,23 +8,23 @@ const multiplicacao = document.getElementById("multiplicacao");
 
 function somar(){
     const resultado = parseFloat(valorA.value) + parseFloat(valorB.value)
-    return resultado;
+    return resultado.toFixed(2);
 };
 
 function subtrair(){
     const resultado = parseFloat(valorA.value) - parseFloat(valorB.value)
-    return resultado;
+    return resultado.toFixed(2);
 };
 
 function multiplicar(){
     const resultado = parseFloat(valorA.value) * parseFloat(valorB.value)
-    return resultado;
+    return resultado.toFixed(2);
 };
-
 
 calcular.onclick = () => {
 
     soma.value = somar();
     subtracao.value = subtrair();
     multiplicacao.value = multiplicar();
+
 };
