@@ -30,6 +30,15 @@ function dividir(){
 
 calcular.onclick = () => {
 
+    if(isNaN(valorB.value) || isNaN(valorA.value)){
+        alert("Digite um valor numérico!")
+
+        valorA.value = ""
+        valorB.value = ""
+        
+        return
+    }
+
     soma.value = somar();
     subtracao.value = subtrair();
     multiplicacao.value = multiplicar();
