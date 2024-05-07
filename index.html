@@ -14,28 +14,30 @@
 
     <div id="entradaValores">
         <div id="valores">
-            <label for="valorA">Primeiro Valor</label>
-            <input type="text" id="valorA">
-    
-            <label for="valorB">Segundo Valor</label>
-            <input type="text" id="valorB">
+            <form id="formulario">
+                <label for="valorA">Primeiro Valor</label>
+                <input type="text" id="valorA" required>
+        
+                <label for="valorB">Segundo Valor</label>
+                <input type="text" id="valorB" required>
+
+                <input type="submit" id="calcular" value="Calcular">
+            </form>
         </div>
-    
-        <input type="button" id="calcular" value="Calcular">
     </div>
 
     <div id="operacoes">
         <label for="somar">soma</label>
-        <input type="text" id="somar">
+        <input type="text" id="somar" readonly>
 
-        <label for="subtracao">subtração</label>
+        <label for="subtracao">subtração</label readonly>
         <input type="text" id="subtracao">
         
         <label for="multiplicacao">multiplição</label>
-        <input type="text" id="multiplicacao">
+        <input type="text" id="multiplicacao" readonly>
 
         <label for="divisao">divisão</label>
-        <input type="text" id="divisao">
+        <input type="text" id="divisao" readonly>
     </div>
     <script src="script.js"></script>
 </body>

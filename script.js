@@ -1,6 +1,7 @@
 const valorA = document.getElementById("valorA");
 const valorB = document.getElementById("valorB");
-const calcular = document.getElementById("calcular");
+
+const formulario = document.getElementById("formulario")
 
 const soma = document.getElementById("somar");
 const subtracao = document.getElementById("subtracao");
@@ -28,15 +29,17 @@ function dividir(){
 };
 
 
-calcular.onclick = () => {
+formulario.onsubmit = (e) => {
+
+    e.preventDefault();
 
     if(isNaN(valorB.value) || isNaN(valorA.value)){
-        alert("Digite um valor numérico!")
+        alert("Digite um valor numérico!");
 
-        valorA.value = ""
-        valorB.value = ""
+        valorA.value = "";
+        valorB.value = "";
         
-        return
+        return;
     }
 
     soma.value = somar();
